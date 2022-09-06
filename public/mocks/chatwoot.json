@@ -1,0 +1,263 @@
+{
+    "event": "appContext",
+    "data": {
+        "conversation": {
+            "meta": {
+                "sender": {
+                    "additional_attributes": {},
+                    "availability_status": "offline",
+                    "email": null,
+                    "id": 8,
+                    "name": "twilight-feather-273",
+                    "phone_number": null,
+                    "identifier": null,
+                    "thumbnail": "",
+                    "custom_attributes": {},
+                    "last_activity_at": 1661816855
+                },
+                "channel": "Channel::WebWidget",
+                "assignee": {
+                    "id": 1,
+                    "account_id": 1,
+                    "availability_status": "offline",
+                    "auto_offline": true,
+                    "confirmed": true,
+                    "email": "test@example.com",
+                    "available_name": "John Doe",
+                    "name": "John Doe",
+                    "role": "administrator",
+                    "thumbnail": "https://chatwoot.example.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d12edcff78c9256191c17ccc4f7f0e58488460b6/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2QzNKbGMybDZaVWtpRERJMU1IZ3lOVEFHT3daVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--91516d93ca87f18be1c1b0b8b030a5fd2243486b/1df38ded821e47b1120b89e6ad156007.png"
+                },
+                "hmac_verified": false
+            },
+            "id": 8,
+            "messages": [
+                {
+                    "id": 39,
+                    "content": null,
+                    "inbox_id": 2,
+                    "conversation_id": 8,
+                    "message_type": 0,
+                    "content_type": "text",
+                    "content_attributes": {},
+                    "created_at": 1661549486,
+                    "private": false,
+                    "source_id": null,
+                    "sender": {
+                        "additional_attributes": {},
+                        "custom_attributes": {},
+                        "email": null,
+                        "id": 8,
+                        "identifier": null,
+                        "name": "twilight-feather-273",
+                        "phone_number": null,
+                        "thumbnail": "",
+                        "type": "contact"
+                    },
+                    "attachments": [
+                        {
+                            "id": 1,
+                            "message_id": 39,
+                            "file_type": "image",
+                            "account_id": 1,
+                            "extension": null,
+                            "data_url": "https://chatwoot.example.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--520f6bed06d4f14d20ccfbfbe9ae67524bb7e056/figuro.png",
+                            "thumb_url": "https://chatwoot.example.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--520f6bed06d4f14d20ccfbfbe9ae67524bb7e056/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2QzNKbGMybDZaVWtpRERJMU1IZ3lOVEFHT3daVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--91516d93ca87f18be1c1b0b8b030a5fd2243486b/figuro.png",
+                            "file_size": 27236
+                        }
+                    ]
+                },
+                {
+                    "id": 40,
+                    "content": "Dale al equipo una forma de llegar a ti.",
+                    "inbox_id": 2,
+                    "conversation_id": 8,
+                    "message_type": 3,
+                    "content_type": "text",
+                    "content_attributes": {},
+                    "created_at": 1661549486,
+                    "private": false,
+                    "source_id": null
+                },
+                {
+                    "id": 41,
+                    "content": "Recibir notificaciones por correo electrónico",
+                    "inbox_id": 2,
+                    "conversation_id": 8,
+                    "message_type": 3,
+                    "content_type": "input_email",
+                    "content_attributes": {},
+                    "created_at": 1661549486,
+                    "private": false,
+                    "source_id": null
+                },
+                {
+                    "id": 42,
+                    "content": "Hola",
+                    "inbox_id": 2,
+                    "conversation_id": 8,
+                    "message_type": 0,
+                    "content_type": "text",
+                    "content_attributes": {},
+                    "created_at": 1661549507,
+                    "private": false,
+                    "source_id": null,
+                    "sender": {
+                        "additional_attributes": {},
+                        "custom_attributes": {},
+                        "email": null,
+                        "id": 8,
+                        "identifier": null,
+                        "name": "twilight-feather-273",
+                        "phone_number": null,
+                        "thumbnail": "",
+                        "type": "contact"
+                    }
+                },
+                {
+                    "id": 43,
+                    "content": "John Doe auto-asignado a esta conversación",
+                    "inbox_id": 2,
+                    "conversation_id": 8,
+                    "message_type": 2,
+                    "content_type": "text",
+                    "content_attributes": {},
+                    "created_at": 1661549660,
+                    "private": false,
+                    "source_id": null
+                },
+                {
+                    "id": 44,
+                    "content": null,
+                    "inbox_id": 2,
+                    "conversation_id": 8,
+                    "message_type": 0,
+                    "content_type": "text",
+                    "content_attributes": {},
+                    "created_at": 1661553977,
+                    "private": false,
+                    "source_id": null,
+                    "sender": {
+                        "additional_attributes": {},
+                        "custom_attributes": {},
+                        "email": null,
+                        "id": 8,
+                        "identifier": null,
+                        "name": "twilight-feather-273",
+                        "phone_number": null,
+                        "thumbnail": "",
+                        "type": "contact"
+                    },
+                    "attachments": [
+                        {
+                            "id": 2,
+                            "message_id": 44,
+                            "file_type": "file",
+                            "account_id": 1,
+                            "extension": null,
+                            "data_url": "https://chatwoot.example.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5da3c19028b3d6ed50b00063a37c722455e28a17/PDF%20Figuro%20Logo.pdf",
+                            "thumb_url": "",
+                            "file_size": 294307
+                        }
+                    ]
+                },
+                {
+                    "id": 45,
+                    "content": "aló",
+                    "inbox_id": 2,
+                    "conversation_id": 8,
+                    "message_type": 0,
+                    "content_type": "text",
+                    "content_attributes": {},
+                    "created_at": 1661816833,
+                    "private": false,
+                    "source_id": null,
+                    "sender": {
+                        "additional_attributes": {},
+                        "custom_attributes": {},
+                        "email": null,
+                        "id": 8,
+                        "identifier": null,
+                        "name": "twilight-feather-273",
+                        "phone_number": null,
+                        "thumbnail": "",
+                        "type": "contact"
+                    }
+                },
+                {
+                    "id": 46,
+                    "content": "?",
+                    "account_id": 1,
+                    "inbox_id": 2,
+                    "conversation_id": 8,
+                    "message_type": 0,
+                    "created_at": 1661816855,
+                    "updated_at": "2022-08-29T23:47:35.279Z",
+                    "private": false,
+                    "status": "sent",
+                    "source_id": null,
+                    "content_type": "text",
+                    "content_attributes": {},
+                    "sender_type": "Contact",
+                    "sender_id": 8,
+                    "external_source_ids": {},
+                    "additional_attributes": {},
+                    "conversation": {
+                        "assignee_id": 1
+                    },
+                    "sender": {
+                        "additional_attributes": {},
+                        "custom_attributes": {},
+                        "email": null,
+                        "id": 8,
+                        "identifier": null,
+                        "name": "twilight-feather-273",
+                        "phone_number": null,
+                        "thumbnail": "",
+                        "type": "contact"
+                    }
+                }
+            ],
+            "account_id": 1,
+            "additional_attributes": {
+                "browser": {
+                    "device_name": "Unknown",
+                    "browser_name": "Chrome",
+                    "platform_name": "macOS",
+                    "browser_version": "104.0.0.0",
+                    "platform_version": "10.15.7"
+                },
+                "referer": "https://referer.example.com/",
+                "initiated_at": {
+                    "timestamp": "Fri Aug 26 2022 17:31:25 GMT-0400 (Atlantic Standard Time)"
+                },
+                "browser_language": "en"
+            },
+            "agent_last_seen_at": 1661893789,
+            "assignee_last_seen_at": 1661893789,
+            "can_reply": true,
+            "contact_last_seen_at": 1661816855,
+            "custom_attributes": {},
+            "inbox_id": 2,
+            "labels": [],
+            "muted": false,
+            "snoozed_until": null,
+            "status": "open",
+            "timestamp": 1661816855,
+            "unread_count": 0,
+            "allMessagesLoaded": false,
+            "dataFetched": true
+        },
+        "contact": {
+            "additional_attributes": {},
+            "email": null,
+            "id": 8,
+            "name": "twilight-feather-273",
+            "phone_number": null,
+            "identifier": null,
+            "thumbnail": "",
+            "custom_attributes": {},
+            "last_activity_at": 1661816855
+        }
+    }
+}

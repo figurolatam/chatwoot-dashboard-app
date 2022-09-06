@@ -1,12 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project template communicates with [Chatwoot](https://www.chatwoot.com/) and shows a window with the retrieved information using [Next.js](https://nextjs.org/). It comes Tailwind and DaisyUI (as a plugin) installed for styling.
+
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
@@ -14,9 +13,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## useChatwoot Hook
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The core of the project is the `useChatwoot` hooks, which implements the communication between both, for localhost environmet, it will try to load `public/mocks/chatwoot.json` to populate the hook, otherwise, it will expect the message window event as described in its [documentation](https://www.chatwoot.com/docs/product/others/dashboard-apps).
+
+## Typescript
+
+In order to support properly *typescript*, the key names are returned in camel casing instead of the snake case described on Chatwoot documentation, *types* are provided in `types/index.ts`.
+
+## Running as production locally
+
+To test production, build and serve the project using:
+
+```
+NODE_ENV=production yarn start
+```
+
+You can use an external service like *ngrok* to tunnel your conecction as required from *Chatwoot*.
+
 
 ## Learn More
 
