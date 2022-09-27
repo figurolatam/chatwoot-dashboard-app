@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import useSWR from "swr";
 import { ChatwootPayload } from "../types";
 import { camelizeKeys } from "humps";
+import { fromEvent } from "rxjs";
 
 const useChatwoot = (): [boolean, ChatwootPayload, Error | undefined] => {
     const [loaded, setLoaded] = useState(false);
@@ -23,32 +24,26 @@ const useChatwoot = (): [boolean, ChatwootPayload, Error | undefined] => {
         }
     }
 
-    const messageEvent = (e: MessageEvent) => {
-        try {
-            const { data } = JSON.parse(e.data);
-
-            setPayload(camelizeKeys(JSON.parse(data)));
-        } catch {
-            setError(Error("Unable to parse data"));
-        } finally {
-            setLoaded(true);
-        }
-
-        console.log("message event: ", payload);
-    };
-
     useEffect(() => {
         if (process.env.NODE_ENV !== "development") {
-            window.addEventListener("message", messageEvent, true);
+            fromEvent<MessageEvent>(window, "message")
+                .subscribe((e) => {
+                    
+                    try {
+                        const { data } = JSON.parse(e.data);
+            
+                        setPayload(camelizeKeys(JSON.parse(data)));
+                    } catch {
+                        setError(Error("Unable to parse data"));
+                    } finally {
+                        setLoaded(true);
+                    }
+            
+                    console.log("message event: ", payload);
+                });
+
             window.parent.postMessage("chatwoot-dashboard-app:fetch-info", "*");
         }
-
-        // cleanup this component
-        return () => {
-            if (process.env.NODE_ENV !== "development") {
-                window.removeEventListener("message", messageEvent);
-            }
-        };
     }, []);
 
     return [loaded, payload, error];

@@ -53,6 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.16"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:235e8b4ec8b015bb8a87602f02f63782af6c16976f9a7bdf1c7c3f25ecb860cde2638e24535215334cc4856f521f36a796aa508f6a23b1faf35863afac3cb80e#npm:18.2.0"],\
+            ["rxjs", "npm:7.5.7"],\
             ["swr", "virtual:235e8b4ec8b015bb8a87602f02f63782af6c16976f9a7bdf1c7c3f25ecb860cde2638e24535215334cc4856f521f36a796aa508f6a23b1faf35863afac3cb80e#npm:1.3.0"],\
             ["tailwindcss", "virtual:235e8b4ec8b015bb8a87602f02f63782af6c16976f9a7bdf1c7c3f25ecb860cde2638e24535215334cc4856f521f36a796aa508f6a23b1faf35863afac3cb80e#npm:3.1.8"],\
             ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"]\
@@ -1121,6 +1122,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.16"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:235e8b4ec8b015bb8a87602f02f63782af6c16976f9a7bdf1c7c3f25ecb860cde2638e24535215334cc4856f521f36a796aa508f6a23b1faf35863afac3cb80e#npm:18.2.0"],\
+            ["rxjs", "npm:7.5.7"],\
             ["swr", "virtual:235e8b4ec8b015bb8a87602f02f63782af6c16976f9a7bdf1c7c3f25ecb860cde2638e24535215334cc4856f521f36a796aa508f6a23b1faf35863afac3cb80e#npm:1.3.0"],\
             ["tailwindcss", "virtual:235e8b4ec8b015bb8a87602f02f63782af6c16976f9a7bdf1c7c3f25ecb860cde2638e24535215334cc4856f521f36a796aa508f6a23b1faf35863afac3cb80e#npm:3.1.8"],\
             ["typescript", "patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"]\
@@ -3944,6 +3946,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["run-parallel", "npm:1.2.0"],\
             ["queue-microtask", "npm:1.2.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["rxjs", [\
+        ["npm:7.5.7", {\
+          "packageLocation": "./.yarn/cache/rxjs-npm-7.5.7-602d5c56e4-edabcdb73b.zip/node_modules/rxjs/",\
+          "packageDependencies": [\
+            ["rxjs", "npm:7.5.7"],\
+            ["tslib", "npm:2.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
